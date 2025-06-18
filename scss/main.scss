@@ -1,0 +1,103 @@
+/* 
+-------------------------
+Configuraciones iniciales 
+-------------------------
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+---------
+Variables
+---------
+*/
+$primary: #ff5a00;
+$secundary: #945c03;
+$tertiary: #fce9e2;
+$dark: #1e1e1e;
+$light: #fafafa;
+$sm: 1.2rem;
+$md: 1.6rem;
+$lg: 1.8rem;
+$xlg: 2.4rem;
+$typo1: "Noto Sans", sans-serif;
+
+/* 
+----
+Funciones
+---- 
+*/
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    font-family: $typo1;
+    background-color: $light;
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.mainButton {
+    @include flex(row, center, center);
+
+    a {
+        @include flex(row, center, center);
+        width: 13rem;
+        height: 100%;
+        padding: 1.2rem 1.6rem;
+        background-color: $primary;
+        color: $light;
+        border-radius: 0.6rem;
+
+        i {
+            margin-left: 1rem
+        }
+    }
+}
+
+/* 
+-------
+Estilos
+--------
+*/
+
+header {
+    @include flex(row, space-between, center);
+    padding: 1rem 8rem;
+    height: 10rem;
+
+    a {
+        height: 70%;
+        img {
+            height: 100%;
+        }
+    }
+
+    nav {
+        @include flex(row, center, center);
+        height: 100%;
+
+        ul {
+            @include flex(row, space-around, center);
+            gap: 4rem;
+            font-size: $md;
+        }
+    }
+}

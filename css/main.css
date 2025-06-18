@@ -1,0 +1,90 @@
+/* 
+-------------------------
+Configuraciones iniciales 
+-------------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+---------
+Variables
+---------
+*/
+/* 
+----
+Funciones
+---- 
+*/
+html {
+  font-size: 62.5%;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #fafafa;
+}
+html ul {
+  list-style: none;
+}
+html a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.mainButton a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  height: 100%;
+  padding: 1.2rem 1.6rem;
+  background-color: #ff5a00;
+  color: #fafafa;
+  border-radius: 0.6rem;
+}
+.mainButton a i {
+  margin-left: 1rem;
+}
+
+/* 
+-------
+Estilos
+--------
+*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8rem;
+  height: 10rem;
+}
+header a {
+  height: 70%;
+}
+header a img {
+  height: 100%;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=main.css.map */
