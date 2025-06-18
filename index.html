@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio</title>
+  <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" href="./" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,20 +14,36 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <a href="index.html"><img src="./assets/trsp-Imagotipo.png" alt="Logotipo" /></a>
     <nav>
       <ul>
-        <li><a href="service.html">Inicio</a></li>
-        <li><a href="clients.html">Acerca de</a></li>
         <li><a href="about.html">Nosotros</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-        <li class="mainButton">
-          <a href="schedule.html">Agenda<i class="fa-solid fa-calendar-days"></i></a>
-        </li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="clients.html">Clientes</a></li>
+        <a href="schedule.html" class="mainButton">Agenda<i class="fa-solid fa-calendar-days"></i></a>
       </ul>
     </nav>
   </header>
+  <main class="main">
+    <section class="main_hero">
+      <div>
+        <p>Impulsando el Progreso <br />con Seguridad y Calidad</p>
+      </div>
+      <div>
+        <p>
+          Diseñamos, construimos y mantenemos <br />proyectos eléctricos,
+          mecánicos y civiles. <br />La satisfacción del cliente es nuestro
+          <br />distintivo, reflejando la calidad de nuestro <br />trabajo y
+          la confianza que inspiramos.
+        </p>
+      </div>
+      <div>
+        <a href="schedule.html" class="mainButton">Agenda<i class="fa-solid fa-calendar-days"></i></a>
+        <a href="schedule.html" class="secondButton">Saber más<i class="fa-solid fa-handshake-angle"></i></a>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
